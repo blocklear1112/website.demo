@@ -1,174 +1,290 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Spectral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Dawn Appliance Repair - Pittsburgh Appliance Repair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css">
+    <script>
+        // Optional: Add custom Tailwind configuration if needed
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#facc15', // Example gold color (Tailwind yellow-400) - Adjust as needed
+                        'brand-dark': '#1f2937', // Example dark color (Tailwind gray-800)
+                        'brand-darker': '#111827', // Example darker color (Tailwind gray-900)
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold">
+                <img src="https://placehold.co/150x50/1f2937/facc15?text=Southern+Dawn" alt="Southern Dawn Appliance Repair Logo" class="h-10 rounded">
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-brand-dark font-semibold hidden md:inline">
+                    <i class="fas fa-phone-alt mr-1 text-brand-gold"></i> Call Us: <a href="tel:412-607-5005" class="hover:text-brand-gold">412-607-5005</a>
+                </span>
+                 <a href="#booking" class="accent-button text-sm py-2 px-4">
+                    Book Appointment
+                </a>
+            </div>
+        </nav>
+    </header>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Spectral</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    <section class="hero-bg text-center py-24 md:py-40">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">Solving All of Your Appliance Issues</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto drop-shadow-sm">Fast, reliable repairs for your essential home appliances in the Pittsburgh area. Get expert help today!</p>
+            <a href="#about" class="light-hero-button">
+                Learn More
+            </a>
+        </div>
+    </section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Spectral</h2>
-							<p>Another fine responsive<br />
-							site template freebie<br />
-							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+    <section id="about" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-gray-700">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">Your Trusted Local Appliance Repair Experts</h2>
+                    <p class="mb-4">A broken appliance disrupts your entire routine. Spoiled food, laundry piling up, inability to cook meals – it's stressful and inconvenient. At Southern Dawn Appliance Repair, we understand the urgency.</p>
+                    <p class="mb-6">We provide prompt, reliable, and professional repair services for all major household appliances across Pittsburgh and surrounding areas. Our goal is to get your appliances back up and running quickly and efficiently, minimizing hassle for you.</p>
+                     <a href="#services" class="accent-button">Our Services</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/cccccc/333333?text=Technician+Fixing+Washer" alt="Technician repairing an appliance" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
+    <section class="py-16 bg-brand-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Need Urgent Appliance Help?</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">Don't wait! Contact us now for fast assistance with your critical appliance breakdowns.</p>
+             <a href="#booking" class="accent-button">Request Service Now</a>
+        </div>
+    </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-					</section>
+    <section id="services" class="py-16 lg:py-24 bg-brand-darker text-gray-300">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-headline-darkbg mb-12">What We Offer You</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
+                <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-snowflake text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">Refrigerator & Freezer Repair</h3>
+                    <p class="text-sm">Keeping your food fresh is our priority.</p>
+                </div>
+                <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-temperature-high text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">Oven, Stove & Cooktop Repair</h3>
+                    <p class="text-sm">Get back to cooking your favorite meals.</p>
+                </div>
+                 <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-soap text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">Dishwasher Repair</h3>
+                    <p class="text-sm">Solving leaks, cleaning issues, and more.</p>
+                </div>
+                 <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-tshirt text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">Washing Machine Repair</h3>
+                    <p class="text-sm">Handling spin cycle, draining, and other problems.</p>
+                </div>
+                 <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-wind text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">Dryer Repair</h3>
+                    <p class="text-sm">Fixing heating issues and tumbling problems.</p>
+                </div>
+                 <div class="text-center p-6 bg-brand-dark rounded-lg shadow-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-tools text-4xl text-brand-gold mb-4"></i>
+                    <h3 class="font-semibold text-xl text-white mb-2">All Major Brands</h3>
+                    <p class="text-sm">Experienced with Whirlpool, GE, Samsung, LG, Maytag, Bosch & more.</p>
+                     </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
+    <section id="why-us" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-6">
+             <div class="flex flex-col md:flex-row items-center gap-12">
+                 <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/cccccc/333333?text=Technician+Hands+Close-up" alt="Close up of technician working" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 text-gray-700">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6">See How We're Different</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-gold text-xl mr-3 mt-1"></i>
+                            <span><strong class="text-brand-dark">Local & Trusted:</strong> We're part of the Pittsburgh community, committed to honest service.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-gold text-xl mr-3 mt-1"></i>
+                            <span><strong class="text-brand-dark">Expert Technicians:</strong> Certified, insured, and experienced across all major brands.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-gold text-xl mr-3 mt-1"></i>
+                            <span><strong class="text-brand-dark">Upfront Pricing:</strong> Clear quotes provided before any work begins – no hidden fees.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-gold text-xl mr-3 mt-1"></i>
+                            <span><strong class="text-brand-dark">Quality & Warranty:</strong> We use quality parts and offer a 90-day warranty on parts and labor.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-gold text-xl mr-3 mt-1"></i>
+                            <span><strong class="text-brand-dark">Prompt & Reliable:</strong> Flexible scheduling aimed at getting your appliance fixed fast.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+    <section id="testimonials" class="py-16 lg:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-headline mb-12">Happy Client Experiences</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-brand-gold">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/facc15/1f2937?text=JD" alt="Customer Avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-brand-dark">Jane D.</p>
+                            <p class="text-sm text-gray-500">Pittsburgh Area</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"[Placeholder: Add a real customer review here highlighting positive aspects like speed, professionalism, or problem solved.]"</p>
+                    <div class="text-brand-gold">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-brand-gold">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/facc15/1f2937?text=MS" alt="Customer Avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-brand-dark">Mike S.</p>
+                            <p class="text-sm text-gray-500">Monroeville</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"[Placeholder: Add another real customer review focusing on different positive aspects like honesty, fair pricing, or specific appliance fixed.]"</p>
+                     <div class="text-brand-gold">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-brand-gold lg:col-span-1 md:col-span-2">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/facc15/1f2937?text=RB" alt="Customer Avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-brand-dark">Robert B.</p>
+                            <p class="text-sm text-gray-500">Wilkinsburg</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"[Placeholder: Add a third real customer review, perhaps mentioning trustworthiness or clear explanations.]"</p>
+                     <div class="text-brand-gold">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-12">
+                  <a href="#booking" class="accent-button">Get Your Free Quote</a>
+             </div>
+        </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+    <section id="booking" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-6">
+             <h2 class="section-headline mb-12">Contact Us Today!</h2>
+             <div class="flex flex-col md:flex-row items-center gap-12 bg-gray-50 p-8 rounded-lg shadow-lg">
+                 <div class="md:w-1/2">
+                     <img src="https://placehold.co/600x400/cccccc/333333?text=Assortment+of+Appliances" alt="Home appliances" class="rounded-lg shadow-md w-full">
+                 </div>
+                 <div class="md:w-1/2 w-full">
+                     <h3 class="text-2xl font-semibold mb-6 text-brand-dark text-center md:text-left">Book Your Appointment</h3>
+                     <form action="#" method="POST" class="space-y-4"> <div>
+                             <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name</label>
+                             <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold">
+                         </div>
+                         <div>
+                             <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone</label>
+                             <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold">
+                         </div>
+                          <div>
+                             <label for="appliance" class="block text-sm font-medium text-gray-600 mb-1">Appliance Type</label>
+                             <select id="appliance" name="appliance" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold bg-white">
+                                 <option value="">Select Appliance</option>
+                                 <option value="refrigerator">Refrigerator</option>
+                                 <option value="freezer">Freezer</option>
+                                 <option value="oven">Oven/Stove</option>
+                                 <option value="dishwasher">Dishwasher</option>
+                                 <option value="washer">Washing Machine</option>
+                                 <option value="dryer">Dryer</option>
+                                 <option value="other">Other</option>
+                             </select>
+                         </div>
+                         <div>
+                             <label for="description" class="block text-sm font-medium text-gray-600 mb-1">Brief Description of Issue</label>
+                             <textarea id="description" name="description" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold"></textarea>
+                         </div>
+                         <button type="submit" class="w-full accent-button py-3 text-lg">
+                             Request Appointment
+                         </button>
+                     </form>
+                      <p class="mt-6 text-center text-gray-600">Or Call Us Directly: <a href="tel:412-607-5005" class="font-bold text-brand-dark hover:text-brand-gold">412-607-5005</a></p>
+                 </div>
+            </div>
+        </div>
+    </section>
 
-			</div>
+    <footer class="bg-brand-darker text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="https://placehold.co/150x50/facc15/111827?text=Southern+Dawn" alt="Southern Dawn Appliance Repair Logo" class="h-10 mb-4 rounded">
+                     <p class="text-sm">Your trusted local experts for appliance repair in Pittsburgh and surrounding areas.</p>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-white">Testimonials</a></li>
+                        <li><a href="#booking" class="hover:text-white">Book Online</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Contact Us</h4>
+                     <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-phone-alt mr-2 text-brand-gold"></i> <a href="tel:412-607-5005" class="hover:text-white">412-607-5005</a></li>
+                        <li><i class="fas fa-envelope mr-2 text-brand-gold"></i> <a href="mailto:sdservice@gmail.com" class="hover:text-white">sdservice@gmail.com</a></li>
+                        <li><i class="fas fa-clock mr-2 text-brand-gold"></i> Hours: Mon-Thu 9am-4pm; Fri 9am-1pm</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Service Areas</h4>
+                    <p class="text-sm">Proudly serving Pittsburgh, Wall, Pitcairn, Churchill, Wilmerding, Irwin, Monroeville, Wilkinsburg, Forest Hills, Turtle Creek, West Mifflin, Braddock, Chalfant, North Braddock, East McKeesport, East Pittsburgh, North Versailles, Wilkins Township.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" aria-label="Google Reviews" class="text-gray-400 hover:text-white"><i class="fab fa-google text-xl"></i></a>
+                         </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> Southern Dawn Appliance Repair. All Rights Reserved. | <a href="/privacy" class="hover:text-white underline">Privacy Policy</a></p> </div>
+        </div>
+    </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
-	</body>
+</body>
 </html>

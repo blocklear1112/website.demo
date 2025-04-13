@@ -1,0 +1,70 @@
+/* filepath: c:\Users\billy\Documents\Website\custom.css */
+/* Custom styles */
+.hero-bg {
+    /* Placeholder background - replace with your image */
+    background-image: url('https://placehold.co/1200x600/334155/ffffff?text=Technician+Working');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Needed for overlay */
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+.hero-content {
+    position: relative; /* Ensure content is above overlay */
+    z-index: 2;
+}
+/* Add subtle animation for buttons or elements if desired */
+.button-hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+/* Style for section headlines similar to example */
+.section-headline {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    color: var(--brand-dark); /* text-brand-dark */
+    margin-bottom: 1rem; /* mb-4 */
+    text-align: center; /* text-center */
+}
+.section-headline-darkbg {
+     font-size: 1.875rem; /* text-3xl */
+     font-weight: bold; /* font-bold */
+     color: white; /* text-white */
+     margin-bottom: 1rem; /* mb-4 */
+     text-align: center; /* text-center */
+}
+/* Default accent button style (gold) */
+.accent-button {
+        background-color: #FFD700; /* Replace bg-brand-gold */
+        color: #333333; /* Replace text-brand-darker */
+        font-weight: bold;
+        padding: 0.5rem 1.5rem; /* Replace py-2 px-6 */
+        border-radius: 0.5rem; /* Replace rounded-lg */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Replace shadow */
+        font-size: 1.125rem; /* Replace text-lg */
+        border: 1px solid #FFCC00; /* Replace border-yellow-600 */
+        transition: all 0.2s ease-in-out;
+} /* Closing brace for .accent-button */
+.accent-button:hover {
+    opacity: 0.9; /* Replace hover:opacity-90 */
+}
+/* Class for the lighter button in hero */
+.light-hero-button {
+     background-color: white;
+     color: var(--brand-dark);
+     font-weight: bold;
+     padding: 0.5rem 1.5rem;
+     border-radius: 0.5rem;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     font-size: 1.125rem;
+     border: 1px solid var(--brand-dark);
+     transition: all 0.2s ease-in-out;
+}
