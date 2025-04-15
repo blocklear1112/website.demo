@@ -2,7 +2,7 @@
 /* Custom styles */
 .hero-bg {
     /* Placeholder background - replace with your image */
-    background-image: url('blocklear1112/website.demo/images/technicianbg.webp');
+    background-image: url('images/technicianbg.webp');
     background-size: cover;
     background-position: center;
     position: relative; /* Needed for overlay */
