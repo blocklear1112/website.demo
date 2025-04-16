@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Southern Dawn Appliance Repair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css"> <!-- Link your custom CSS if needed for header/footer/buttons -->
+    <script>
+        // Include Tailwind config if you use custom brand colors here
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#facc15',
+                        'brand-dark': '#1f2937',
+                        'brand-darker': '#111827',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+
+    <!-- Optional: Include a simplified header if desired -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-center items-center">
+            <div class="text-xl font-bold">
+                <a href="index.html">
+                    <img src="images/SD Logo Design 250x150.jpg" alt="Southern Dawn Appliance Repair Logo" class="h-16 rounded">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-16 lg:py-24 text-center">
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <i class="fas fa-check-circle text-6xl text-green-500 mb-6"></i>
+            <h1 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Thank You!</h1>
+            <p class="text-lg text-gray-700 mb-8">
+                Your appointment request has been successfully submitted. We will contact you shortly via phone to confirm the details and schedule your service.
+            </p>
+            <a href="index.html" class="accent-button inline-block">
+                Return to Homepage
+            </a>
+        </div>
+    </main>
+
+    <!-- Optional: Include a simplified footer -->
+    <footer class="bg-brand-darker text-gray-400 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; <span id="current-year"></span> Southern Dawn Appliance Repair. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // --- Set Headers ---
     // Use a "From" address that your hosting allows, often related to your domain
     $headers = "From: webmaster@" . $_SERVER['SERVER_NAME'] . "\r\n";
-    $headers .= "Reply-To: $name <$recipient_email>"; // You might want Reply-To set to the sender's email if you collect it
+    $headers .= "Reply-To: " . $recipient_email . "\r\n"; // Or simply use the recipient if no sender email collected
 
     // --- Send Email ---
     if (mail($recipient_email, $subject, $email_body, $headers)) {
