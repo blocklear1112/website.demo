@@ -3,7 +3,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // --- Recipient Email ---
-    $recipient_email = "sdservice@gmail.com"; // CHANGE THIS TO YOUR EMAIL
+    $recipient_email = "appliance.services.2024@gmail.com"; // CHANGE THIS TO YOUR EMAIL
 
     // --- Get and Sanitize Form Data ---
     $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
